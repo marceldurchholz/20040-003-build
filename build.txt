@@ -72,7 +72,6 @@ scripts/libs/basic/javascript.js
 scripts/libs/jquery.mobile/fastclick.js
 scripts/libs/jquery/jquery-2.1.1.js
 scripts/libs/jquery.mobile/jquery.mobile-1.4.3.js
-scripts/libs/jquery.ui/jquery-ui.js
 scripts/libs/basic/jquerysetup.js
 scripts/libs/basic/jqparseparams.js
 scripts/libs/basic/accounting.js
