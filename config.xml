@@ -106,17 +106,15 @@
     <preference name="android-installLocation"    value="preferExternal" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 	<preference name="KeyboardDisplayRequiresUserAction" value="true" />
 	
-	<!--
 	<preference name="webviewbounce" value="false" />
 	<preference name="UIWebViewBounce" value="false" />
-	-->
 	
-	<!--
 	<preference name="KeyboardShrinksView" value="true" />
 	<preference name="HideKeyboardFormAccessoryBar" value="true" />
-	-->
+
 	<preference name="SuppressesIncrementalRendering" value="true" />
 	<preference name="TopActivityIndicator" value="white" />
+	
     <!-- <preference name="EnableLocation" value="true" /> -->
     <preference name="EnableViewportScale" value="false" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
