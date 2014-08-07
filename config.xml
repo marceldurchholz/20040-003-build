@@ -44,10 +44,10 @@
 	<feature name="Keyboard">
 		<param name="ios-package" value="CDVKeyboard" onload="true" />
 	</feature>
+	-->
 	<feature name="Keyboard">
 		<param name="ios-package" value="IonicKeyboard" onload="true" />
 	</feature>
-	-->
 
 	<!--
 	<feature name="Keyboard">
@@ -78,9 +78,9 @@
 	<gap:plugin name="com.phonegap.plugin.statusbar" />
 
 	<gap:plugin name="com.wizardlogic.cordova.ios_keyboard" />
+	<gap:plugin name="com.ionic.keyboard" />
 	<!--
 	<gap:plugin name="dk.vertica.keyboard"/>
-	<gap:plugin name="com.ionic.keyboard" />
 	-->
 	
 	<!--
