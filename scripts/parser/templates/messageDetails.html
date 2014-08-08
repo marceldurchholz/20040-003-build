@@ -1,7 +1,7 @@
 <% console.log(page_vars.streamData) %>
 <% if (page_vars.streamData.messageArray) _.each(page_vars.streamData.messageArray, function(message) { %>
 	<ul data-role="listview" data-inset="true" data-theme="a" data-icon="false" data-corners="true" data-shadow="true">
-		<li style="m/in-height:80px !important;">
+		<li style="m/in-height:80px !important;border:3px dotted red;">
 			<a style="m/in-height:80px !important;width:auto !important;" data-ajax="true" href="#messagedetails?messageid=<%= message.id %>">
 				<img src="<% if(message.senderdata.pictureurl && message.senderdata.pictureurl!="") { %><%= message.senderdata.pictureurl %><% } else { %>images/avatar.jpg<% } %>" style="padding:20px !important;height:60px !important;width:60px !important;">
 				<h2><% if(message.senderdata.fullname && message.senderdata.fullname!="") { %><%= message.senderdata.fullname %><% } else { %><%= message.senderdata.username %><% } %></h2>
@@ -10,10 +10,9 @@
 		</li>
 	</ul>
 <% }); %>
-
-
+<hr>
 <ul data-role="listview" data-inset="false" data-theme="a" data-icon="false" data-corners="false" data-shadow="false" style="position:inherit;bottom:0;left:0;right:0;margin-bottom:0px !important;padding-top:16px !important;" id="sendMessage" class="sendMessage" >
-	<li style="m/in-height:80px !important;padding-top:0px !important;padding-bottom:0px !important;background-color: rgb(240, 240, 240) !important;" class="sendMessage_leftbox">
+	<li>
 		<form class="messageForm resizetext" data-inset="false">
 			<a name="sendLink" style="margin:0px !important;position:absolute;bottom:16px;right:16px;margin-bottom:0px !important;" data-mini="true" data-role="button" data-enhance="false" data-shadow="false" data-role="none" href="#" data-ajax="true">Senden</a>
 			<textarea placeholder="Nachricht..." data-id="myMsgBox" id="myMsgBox" name="message" data-role="none"></textarea>
