@@ -175,6 +175,9 @@ ul.sendMessage > textarea {
 ul.sendMessage > li {
 	m/in-height:80px !important;padding-top:0px !important;padding-bottom:0px !important;background-color: rgb(240, 240, 240) !important;
 }
+ul.sendMessage {
+	position:fixed;bottom:0;left:0;right:0;margin-bottom:0px !important;padding-top:16px !important;
+}
 #myMsgBox {
 	overflow-y:visible !important;
 	resize: none !important;
