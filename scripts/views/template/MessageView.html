@@ -11,5 +11,27 @@
 <div data-role="content">
 
 	<span data-pastload-module="simpletext" data-pastload-field="messageDetails" data-messageid="<%= page_vars.query_vars.messageid %>"></span>
+	<div id="msgDetailsEndGap" style="float:none;clear:both;height:120px;">&nbsp;</div>
 	
 </div>
+
+<div data-theme="a" data-role="footer" data-fullscreen="true" data-position="fixed"  data-tap-toggle="false">
+	<div data-role="navbar">
+		<ul data-role="listview" data-inset="false" data-theme="a" data-icon="false" data-corners="false" data-shadow="false" id="sendMessage" class="sendMessage">
+			<li>
+				<form class="messageForm resizetext" data-inset="false">
+					<a name="sendLink" style="margin:0px !important;position:absolute;bottom:16px;right:16px;margin-bottom:0px !important;" data-mini="true" data-role="button" data-enhance="false" data-shadow="false" data-role="none" href="#" data-ajax="true">Senden</a>
+					<textarea data-scrolltoid="msgDetailsEndGap" placeholder="Nachricht..." data-id="myMsgBox" id="myMsgBox" name="message" data-role="none"></textarea>
+				</form>
+			</li>
+		</ul>
+		<!--
+		<ul>
+			<li><a href="index.html" data-prefetch="true" data-transition="none">Info</a></li>
+			<li><a href="page-b.html" data-prefetch="true" data-transition="flip">Friends</a></li>
+			<li><a href="page-c.html" data-prefetch="true" data-transition="turn">Albums</a></li>
+			<li><a href="page-d.html" data-prefetch="true" data-transition="slide">Emails</a></li>
+		</ul>
+		-->
+	</div><!-- /navbar -->
+</div><!-- /footer -->
