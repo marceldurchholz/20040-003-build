@@ -12,7 +12,7 @@
 
 	<span data-pastload-module="simpletext" data-pastload-field="messageDetails" data-messageid="<%= page_vars.query_vars.messageid %>"></span>
 	<div id="msgDetailsEndGap" style="float:none;clear:both;height:113px;background-color:yellow !important;overflow:hidden !important;">&nbsp;</div>
-	<div id="nativeKeyboardGap" style="float:none;clear:both;height:<%= window.height_native_keyboard %>px !important;background-color:red !important;overflow:hidden !important;">nativeKeyboardGap ;-)</div>
+	<div id="nativeKeyboardGap" style="float:none;clear:both;height:<% if (window.keyboardvisible==true) { %><%= window.height_native_keyboard %><% } else { %>0<% } %>px !important;background-color:red !important;overflow:hidden !important;">nativeKeyboardGap ;-)</div>
 	<div id="realEndDiv"></div>
 	
 </div>
