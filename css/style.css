@@ -51,6 +51,13 @@ div[data-role="content"] {
 	left: 0;
 	right: 0;
 }
+div[data-role="footer"], .fixedFooter {
+	position: fixed !important;
+	left: 0px !important;
+	right: 0px !important;
+	bottom: 0px !important;
+	z-index: 999 !important;
+}
 a {
 	text-decoration: none !important;
 }
