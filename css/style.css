@@ -17,6 +17,7 @@ body > * {
 	-webkit-tap-highlight-color: rgba(0,0,0,0) !important;
 }
 div[data-role="page"] {
+	-webkit-overflow-scrolling: touch !important;
 	padding-top: 41px !important;
 }
 div[data-role="page"], body, #container {
@@ -45,19 +46,19 @@ div[data-role="header"] {
 	right: 0;
 }
 div[data-role="content"] {
-	-webkit-overflow-scrolling: touch !important;
+	
 	position: absolute;
 	top: 41px;
 	bottom: 0;
 	left: 0;
 	right: 0;
 }
-div[data-role="footer"] {
+.fixedFooter {
 	position: fixed !important;
 	left: 0px !important;
 	right: 0px !important;
 	bottom: 0px !important;
-	
+	z-index: 999 !important;
 }
 a {
 	text-decoration: none !important;
