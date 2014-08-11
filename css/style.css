@@ -68,6 +68,9 @@ label {
 .overflow-visible {
 	overflow:visible;
 }
+.textcenter {
+	text-align:center;
+}
 .scrollable {
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;

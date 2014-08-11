@@ -128,7 +128,7 @@
 	  // This must be during the bubble phase (i.e., last argument =
 	  // false) so that inner objects have an opportunity to override it.
 	  document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
-	  var scroller = document.getElementById('scroller');
+	  var scroller = document.getElementById('container');
 	  preventOverScroll(scroller);
 	</script>
 </html>
